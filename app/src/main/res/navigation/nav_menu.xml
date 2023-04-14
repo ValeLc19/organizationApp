@@ -13,10 +13,50 @@
         <action
             android:id="@+id/action_menuPrincipalFragment_to_foodFragment"
             app:destination="@id/foodFragment" />
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_task_fragment"
+            app:destination="@id/task_fragment" />
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_clean_fragment"
+            app:destination="@id/clean_fragment" />
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_fitness_fragment"
+            app:destination="@id/fitness_fragment" />
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_finances_fragment"
+            app:destination="@id/finances_fragment" />
+        <action
+            android:id="@+id/action_menuPrincipalFragment_to_places_fragment"
+            app:destination="@id/places_fragment" />
     </fragment>
     <fragment
         android:id="@+id/foodFragment"
         android:name="com.example.organizationapp.FoodFragment"
         android:label="fragment_food"
         tools:layout="@layout/fragment_food" />
+    <fragment
+        android:id="@+id/task_fragment"
+        android:name="com.example.organizationapp.task_fragment"
+        android:label="fragment_task_fragment"
+        tools:layout="@layout/fragment_task_fragment" />
+    <fragment
+        android:id="@+id/clean_fragment"
+        android:name="com.example.organizationapp.clean_fragment"
+        android:label="fragment_clean_fragment"
+        tools:layout="@layout/fragment_clean_fragment" />
+    <fragment
+        android:id="@+id/fitness_fragment"
+        android:name="com.example.organizationapp.fitness_fragment"
+        android:label="fragment_fitness_fragment"
+        tools:layout="@layout/fragment_fitness_fragment" />
+    <fragment
+        android:id="@+id/finances_fragment"
+        android:name="com.example.organizationapp.finances_fragment"
+        android:label="fragment_finances_fragment"
+        tools:layout="@layout/fragment_finances_fragment" />
+    <fragment
+        android:id="@+id/places_fragment"
+        android:name="com.example.organizationapp.places_fragment"
+        android:label="fragment_places_fragment"
+        tools:layout="@layout/fragment_places_fragment" />
 </navigation>
