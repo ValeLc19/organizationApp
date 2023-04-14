@@ -11,11 +11,32 @@
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
-        android:layout_width="366dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="20sp"
+        android:id="@+id/greeting_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="30sp"
+        android:layout_marginTop="10dp"
         android:text="Good Morning"
-        android:textSize="35sp" />
+        android:textSize="30sp" />
+
+    <ImageButton
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="37dp"
+        android:background="@drawable/attributes_weather"
+        android:src="@drawable/raining" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/greeting_textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:background="#D4C3C3" />
 
     <ImageButton
         android:id="@+id/food_button"
@@ -23,11 +44,10 @@
         android:layout_height="150dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="50dp"
-        android:layout_marginTop="113dp"
-        android:background="@drawable/button_for_menu_principal"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="110dp"
+        android:background="@drawable/attributes_food_button"
         android:src="@drawable/food_icon" />
-
     <TextView
         android:layout_width="107dp"
         android:layout_height="wrap_content"
@@ -41,5 +61,125 @@
         android:gravity="center"
         android:textSize="20sp" />
 
+    <ImageButton
+        android:id="@+id/task_button"
+        android:layout_width="111dp"
+        android:layout_height="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/attributes_task_button"
+        android:src="@drawable/task_icon" />
+
+    <TextView
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/task_button"
+        android:layout_alignEnd="@+id/task_button"
+        android:layout_alignBottom="@+id/task_button"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:text="Task"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/clean_button"
+        android:layout_width="111dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/food_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/attributes_clean_button"
+        android:src="@drawable/clean_icon" />
+
+    <TextView
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clean_button"
+        android:layout_alignEnd="@+id/clean_button"
+        android:layout_alignBottom="@+id/clean_button"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:text="Clean"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/fitness_button"
+        android:layout_width="111dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/task_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/attributes_fitness_button"
+        android:src="@drawable/fitness_icon" />
+
+    <TextView
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fitness_button"
+        android:layout_alignEnd="@+id/fitness_button"
+        android:layout_alignBottom="@+id/fitness_button"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:text="Fitness"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/finances_button"
+        android:layout_width="111dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/clean_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/attributes_finances_button"
+        android:src="@drawable/finances_icon" />
+
+    <TextView
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/finances_button"
+        android:layout_alignEnd="@+id/finances_button"
+        android:layout_alignBottom="@+id/finances_button"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:text="Finances"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/places_button"
+        android:layout_width="111dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/fitness_button"
+        android:layout_alignParentStart="@+id/fitness_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/attributes_places_button"
+        android:src="@drawable/places_icon" />
+
+    <TextView
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/places_button"
+        android:layout_alignEnd="@+id/places_button"
+        android:layout_alignBottom="@+id/places_button"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:text="Places"
+        android:textSize="20sp" />
 
 </RelativeLayout>
