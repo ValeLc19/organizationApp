@@ -1,27 +1,131 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
     tools:context=".FoodFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-
     <TextView
-        android:id="@+id/greeting_textView"
+        android:id="@+id/food_textView"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginStart="30sp"
         android:layout_marginTop="10dp"
         android:text="Food"
+        android:textColor="@color/black"
         android:textSize="30sp" />
     <View
-        android:layout_width="match_parent"
+        android:layout_width="347dp"
         android:layout_height="1dp"
-        android:layout_below="@+id/greeting_textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="30sp"
         android:layout_marginEnd="60dp"
         android:background="#D4C3C3" />
 
-</FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/attributes_food_button">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:src="@drawable/meal_plan_icon" />
+
+        <TextView
+            android:id="@+id/meal_textView"
+            android:layout_marginStart="10dp"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:text="Meal Plan" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/attributes_food_button">
+
+        <ImageView
+            android:id="@+id/grocery_button"
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/grocery_icon" />
+
+        <TextView
+            android:id="@+id/grocery_textView"
+            android:layout_marginStart="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:text="Grocery Store List" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/attributes_food_button">
+
+        <ImageView
+            android:id="@+id/recipes_button"
+            android:layout_width="73dp"
+            android:layout_height="77dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/recipes_icon" />
+
+        <TextView
+            android:id="@+id/recipes_textView"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:text="Recipes" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/attributes_food_button">
+
+        <ImageView
+            android:id="@+id/food_waste_button"
+            android:layout_width="69dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/trash_icon" />
+
+        <TextView
+            android:id="@+id/food_waste_textView"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:text="Food Waste" />
+    </LinearLayout>
+
+
+</LinearLayout>

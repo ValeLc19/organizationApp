@@ -51,7 +51,7 @@
         tools:layout="@layout/fragment_fitness_fragment" />
     <fragment
         android:id="@+id/finances_fragment"
-        android:name="com.example.organizationapp.finances_fragment"
+        android:name="com.example.organizationapp.FinanceFragment"
         android:label="fragment_finances_fragment"
         tools:layout="@layout/fragment_finances_fragment" />
     <fragment

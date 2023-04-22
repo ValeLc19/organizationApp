@@ -16,6 +16,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="30sp"
         android:layout_marginTop="10dp"
+        android:textColor="@color/black"
         android:text="Good Morning"
         android:textSize="30sp" />
 
@@ -27,7 +28,7 @@
         android:layout_marginTop="11dp"
         android:layout_marginEnd="37dp"
         android:background="@drawable/attributes_weather"
-        android:src="@drawable/raining" />
+        android:src="@drawable/raining_icon" />
 
     <View
         android:layout_width="match_parent"
@@ -56,6 +57,7 @@
         android:layout_alignBottom="@+id/food_button"
         android:layout_marginStart="2dp"
         android:layout_marginEnd="2dp"
+        android:textColor="@color/black"
         android:layout_marginBottom="13dp"
         android:text="Food"
         android:gravity="center"
@@ -82,6 +84,7 @@
         android:layout_marginEnd="2dp"
         android:layout_marginBottom="13dp"
         android:gravity="center"
+        android:textColor="@color/black"
         android:text="Task"
         android:textSize="20sp" />
 
@@ -107,6 +110,7 @@
         android:layout_marginBottom="13dp"
         android:gravity="center"
         android:text="Clean"
+        android:textColor="@color/black"
         android:textSize="20sp" />
 
     <ImageButton
@@ -130,6 +134,7 @@
         android:layout_marginEnd="2dp"
         android:layout_marginBottom="13dp"
         android:gravity="center"
+        android:textColor="@color/black"
         android:text="Fitness"
         android:textSize="20sp" />
 
@@ -155,6 +160,7 @@
         android:layout_marginBottom="13dp"
         android:gravity="center"
         android:text="Finances"
+        android:textColor="@color/black"
         android:textSize="20sp" />
 
     <ImageButton
@@ -179,6 +185,7 @@
         android:layout_marginEnd="2dp"
         android:layout_marginBottom="13dp"
         android:gravity="center"
+        android:textColor="@color/black"
         android:text="Places"
         android:textSize="20sp" />
 

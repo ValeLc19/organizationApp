@@ -1,18 +1,136 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".finances_fragment">
+    android:background="@color/background"
+    android:textAlignment="center">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/greeting_textView"
+        android:id="@+id/finances_textView"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_marginStart="30sp"
         android:layout_marginTop="10dp"
         android:text="Finances"
+        android:textColor="@color/black"
         android:textSize="30sp" />
 
-</FrameLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="347dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/finances_textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="60dp"
+        android:background="#D4C3C3" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/view1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="30dp"/>
+
+
+    <ImageButton
+        android:id="@+id/cards_button"
+        android:layout_width="124dp"
+        android:layout_height="136dp"
+        android:layout_below="@+id/chart"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="60dp"
+        android:background="@drawable/attributes_finances_button"
+        android:src="@drawable/cards" />
+
+    <TextView
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/cards_button"
+        android:layout_alignEnd="@+id/cards_button"
+        android:layout_alignBottom="@+id/cards_button"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:text="Cards"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/task_button"
+        android:layout_width="124dp"
+        android:layout_height="136dp"
+        android:layout_below="@+id/chart"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/attributes_finances_button"
+        android:src="@drawable/spend" />
+
+    <TextView
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/task_button"
+        android:layout_alignEnd="@+id/task_button"
+        android:layout_alignBottom="@+id/task_button"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:text="Spend"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/clean_button"
+        android:layout_width="124dp"
+        android:layout_height="136dp"
+        android:layout_below="@+id/cards_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/attributes_finances_button"
+        android:src="@drawable/savings" />
+
+    <TextView
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/clean_button"
+        android:layout_alignEnd="@+id/clean_button"
+        android:layout_alignBottom="@+id/clean_button"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:text="Savings"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/fitness_button"
+        android:layout_width="124dp"
+        android:layout_height="136dp"
+        android:layout_below="@+id/task_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/attributes_finances_button"
+        android:src="@drawable/payments" />
+
+    <TextView
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fitness_button"
+        android:layout_alignEnd="@+id/fitness_button"
+        android:layout_alignBottom="@+id/fitness_button"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="13dp"
+        android:gravity="center"
+        android:text="Payments"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+</RelativeLayout>

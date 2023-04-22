@@ -8,4 +8,15 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="background">#FFFAFA</color>
+    <color name="green">#4CAF50</color>
+    <color name="red">#CB314D</color>
+    <color name= "yellow">#F9DB05</color>
+    <color name="blue">#1660EA</color>
+    <color name="orange">#F2760D</color>
+    <color name="graph_purple">#524582</color>
+    <color name="graph_blue">#367BC3</color>
+    <color name="graph_green">#38BFA7</color>
+    <color name="graph_green2">#8FE1A2</color>
+    <color name="graph_purple2">#B05CBA</color>
+    <color name="graph_lilac">#D6D1F5</color>
 </resources>
