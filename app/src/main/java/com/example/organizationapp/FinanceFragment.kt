@@ -29,7 +29,7 @@ class FinanceFragment : Fragment() {
         PieEntry(300f, "Subscriptions"),
         PieEntry(100f, "Personal Care"),
         PieEntry(500f, "Entertainment"),
-        PieEntry(20f, "Online Shopping"),
+        PieEntry(100f, "Online"),
     )
 
 
@@ -53,34 +53,25 @@ class FinanceFragment : Fragment() {
         val pieDataSet: PieDataSet = PieDataSet(entries, "January")
         pieDataSet.colors = colors
 
-
         val font = ResourcesCompat.getFont(requireContext(),R.font.comfortaa_font)
         pieDataSet.valueTypeface = font
 
-
         val pieData: PieData = PieData(pieDataSet)
         chart.data = pieData
-
-        chart.holeRadius = 50f
-        chart.transparentCircleRadius=70f
+        chart.holeRadius = 30f
+        chart.transparentCircleRadius=35f
         chart.animateY(1400, Easing.EaseInOutQuad)
-
         pieDataSet.sliceSpace = 3f
         pieDataSet.selectionShift = 5f
-
         chart.setCenterTextTypeface(font)
         chart.centerText = "This month $1560"
-
         //Disable the text below the graph
         chart.legend.isEnabled = false
         chart.description.isEnabled = false
         pieData.setValueTextSize(20f)
-        pieDataSet.valueFormatter = PercentFormatter()
-
-        chart.setUsePercentValues(true)
-
-
-
+        chart.setEntryLabelColor(Color.BLACK)
+        chart.setEntryLabelTypeface(font)
+        chart.setEntryLabelTextSize(10f)
         chart.invalidate()
         return view
     }

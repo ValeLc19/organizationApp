@@ -36,7 +36,7 @@
         tools:layout="@layout/fragment_food" />
     <fragment
         android:id="@+id/task_fragment"
-        android:name="com.example.organizationapp.task_fragment"
+        android:name="com.example.organizationapp.TaskFragment"
         android:label="fragment_task_fragment"
         tools:layout="@layout/fragment_task_fragment" />
     <fragment
